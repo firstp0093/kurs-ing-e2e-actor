@@ -6,6 +6,7 @@
     "scenario": {
       "title": "Test scenario",
       "type": "string",
+      "description": "Select which E2E test scenario to run",
       "enum": ["smoke-home", "login-student", "login-owner", "checkout-etablerer"],
       "default": "smoke-home",
       "editor": "select"
@@ -13,15 +14,18 @@
     "baseUrl": {
       "title": "Base URL",
       "type": "string",
+      "description": "The base URL of the application to test",
       "default": "https://kurs-ing-web-portal-804574293440.europe-north1.run.app"
     },
     "loginEmail": {
       "title": "Login email",
-      "type": "string"
+      "type": "string",
+      "description": "Email address to use for login tests (optional override)"
     },
     "loginPassword": {
       "title": "Login password",
       "type": "string",
+      "description": "Password to use for login tests (optional override)",
       "editor": "textfield",
       "isSecret": true
     }
