@@ -1,0 +1,30 @@
+{
+  "title": "kurs.ing E2E Test Runner",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "scenario": {
+      "title": "Test scenario",
+      "type": "string",
+      "enum": ["smoke-home", "login-student", "login-owner", "checkout-etablerer"],
+      "default": "smoke-home",
+      "editor": "select"
+    },
+    "baseUrl": {
+      "title": "Base URL",
+      "type": "string",
+      "default": "https://kurs-ing-web-portal-804574293440.europe-north1.run.app"
+    },
+    "loginEmail": {
+      "title": "Login email",
+      "type": "string"
+    },
+    "loginPassword": {
+      "title": "Login password",
+      "type": "string",
+      "editor": "textfield",
+      "isSecret": true
+    }
+  },
+  "required": ["scenario"]
+}
