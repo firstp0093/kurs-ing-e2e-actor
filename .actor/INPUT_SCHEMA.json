@@ -15,12 +15,14 @@
       "title": "Base URL",
       "type": "string",
       "description": "The base URL of the application to test",
-      "default": "https://kurs-ing-web-portal-804574293440.europe-north1.run.app"
+      "default": "https://kurs-ing-web-portal-804574293440.europe-north1.run.app",
+      "editor": "textfield"
     },
     "loginEmail": {
       "title": "Login email",
       "type": "string",
-      "description": "Email address to use for login tests (optional override)"
+      "description": "Email address to use for login tests (optional override)",
+      "editor": "textfield"
     },
     "loginPassword": {
       "title": "Login password",
