@@ -1,0 +1,13 @@
+{
+  "name": "kurs-ing-e2e-tester",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "E2E testing actor for kurs.ing SaaS",
+  "dependencies": {
+    "apify": "^3.0.0",
+    "playwright": "^1.49.0"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  }
+}
