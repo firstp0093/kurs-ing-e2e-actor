@@ -8,6 +8,5 @@
     "playwright": "^1.49.0"
   },
   "scripts": {
-    "start": "node src/main.js",
-    "postinstall": "npx playwright install chromium"  }
+    "start": "node src/main.js"
 }
