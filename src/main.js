@@ -30,7 +30,7 @@ async function takeScreenshot(page, label) {
   }
 }
 
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({ headless: true, channel: 'chromium' });
 const page = await browser.newPage();
 
 try {
